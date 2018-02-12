@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:card_view="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="1dp"
+    android:paddingBottom="1dp">
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/colorGray"
+        android:padding="5dp"
+        card_view:cardBackgroundColor="#ffffff"
+        card_view:cardCornerRadius="1dp"
+        card_view:contentPadding="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/UserId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="casual"
+                android:text="USER ID : "
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"
+                android:textStyle="normal|bold" />
+            <EditText
+                android:id="@+id/UserId1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:background="@color/colorWhite"
+                android:ems="10"
+                android:gravity="left|center"
+                android:hint=""
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="12sp"
+                android:layout_toEndOf="@+id/UserId"
+                android:layout_toRightOf="@+id/UserId"
+                android:layout_above="@+id/Username"/>
+
+            <TextView
+                android:id="@+id/Username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/UserId"
+                android:layout_gravity="left"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:text=" Username :"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold|italic" />
+            <EditText
+                android:id="@+id/Username1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:background="@color/colorWhite"
+                android:ems="10"
+                android:gravity="left|center"
+                android:hint=""
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="12sp"
+                android:layout_below="@id/UserId"
+                android:layout_toRightOf="@+id/Username"
+                android:layout_toEndOf="@+id/Username"
+                android:layout_above="@+id/Password"
+                />
+
+
+            <TextView
+                android:id="@+id/Password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Username"
+                android:layout_gravity="left"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="serif"
+                android:text="Password:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:textStyle="bold|italic"
+                android:layout_toLeftOf="@+id/UserId1"
+                android:layout_toStartOf="@+id/UserId1" />
+
+
+            <EditText
+                android:id="@+id/Password1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:background="@color/colorWhite"
+                android:ems="10"
+                android:gravity="left|center"
+                android:hint=""
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textSize="12sp"
+
+                android:layout_toRightOf="@+id/Username"
+                android:layout_toEndOf="@+id/Username"
+                android:layout_below="@+id/Username"
+                android:layout_above="@+id/SubmitButton" />
+
+
+            <Button
+                android:id="@+id/SubmitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/Password"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_rectangle_btn"
+                android:text="Submit"
+                android:textColor="#fffdffff"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+
+
